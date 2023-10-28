@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    background-color: #000000;
+    padding: 20px;
+    margin:0 auto;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.logo{
+    color: #fff; 
+    font-size: 32px;
+
+}
+
+span{
+    color:rgb(215,97,173);
+
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px;
+
+}
+
+nav ul li a:hover{
+    color:rgb(215,97,173);
+    transition: 0.4s;
+}
+
+main{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 14px ;
+}
+
+
+hr{
+    color: rgb(253,228,250);
+}
+
+
+.sobre-a-loja {
+    display: grid;
+    grid-template-columns:50% 50%;
+    gap: 40px;
+    padding: 20px;
+    margin: 16px;
+    font-size: 18px;
+}
+
+.imagem-loja img {
+    max-width: 100%;
+    height: auto;
+}
+
+.texto-sobre-a-loja h2{
+    font-size: 26px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.texto-sobre-a-loja p{
+    margin-top: 16px;
+}
+
+.nossos-produtos >h2 {
+    padding: 24px;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.produtos{
+    padding: 24px;
+    display: grid;
+    grid-template-columns:repeat(4, 24.25%);
+    gap: 1%;
+}
+
+.produtos img{
+    max-width: 100%;
+    height: auto;
+}
+
+.produto {
+    text-align: center;
+    padding: 20px;
+}
+
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:  rgb(215,97,173);
+    transition: 0.4s;
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    
+    .sobre-a-loja {
+        display: grid;
+        grid-template-columns:100%;
+        padding: 20px;
+        margin: 16px;
+        font-size: 18px;
+    }
+
+    .produtos{
+        padding: 24px;
+        display: grid;
+        grid-template-columns:50% 50%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    main{
+        display: block;
+    }
+
+    nav{
+        justify-content: center;
+
+    }
+
+    .sobre-a-loja{
+        display: block;
+        font-size: 1.4em;
+    }
+
+    .produtos{
+        display: block;
+    }
+
+
+}
